@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>声明变量</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../index.html">
+                    Learn
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+1.0-SNAPSHOT        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":dokkaHtml/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":dokkaHtml/main"
+                                       data-filter=":dokkaHtml/main"/>
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    Learn
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="member" id="content" pageIds="Learn::基础语法//声明变量/#/PointingToDeclaration//769193423">
+  <div class="breadcrumbs"><a href="../../index.html">Learn</a><span class="delimiter">/</span><a href="index.html">基础语法</a><span class="delimiter">/</span><span class="current">声明变量</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>声明变量</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="声明变量.html"><span class="token function">声明变量</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><p class="paragraph">Kotlin 是强类型的语言 ， Kotlin要求所有的变量必须先声明、后使用 语法</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">var | val 变量名[:类型][＝初始值]</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">注意事项</p><ol><li><p class="paragraph">用 var 声明的变量是可变的（可以重新赋值），用 val 声明的变量是不可变的（赋值后不能修改引用）。</p></li><li><p class="paragraph">如果声明时不写类型，必须直接赋初始值，编译器通过初始值推断类型；不能既不写类型，也不赋初始值。</p></li><li><p class="paragraph">显式指定的变量类型必须和初始值的类型兼容（相同或子类关系）。</p></li><li><p class="paragraph">val 是不可变引用，但如果是引用对象，内部状态仍可以变化（类似 Java 中的 final 引用）。</p></li><li><p class="paragraph">Kotlin 是强类型语言，变量一旦声明，类型就确定了</p></li></ol><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    //声明变量时显示指定类型<br>    var b : Int<br>    //声明变量时指定初始值，编译器会自动类型推断<br><br>    b = 20 //由于b声明时指定类型是Int(整型),所以这里赋值正确<br><br>    声明是可以同时指定类型和赋值<br>    var age : Int = 15<br>    age = 20 //age的类型是Int,赋值正确<br>    声明变量指定类型与初始值不一致会赋值失败<br>    var name = 200<br><br>    //val声明的变量不可变<br>    val url = “s0raLin.github.io”<br>    url = &quot;s0raLin.gitee.io&quot; //错误，使用val声明的变量不能重新赋值<br><br>    //不能重新赋值为不同类型<br>    var book = &quot;Kotlin核心编程&quot;<br>    book = 20 //类型不匹配，抛出异常<br><br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph"><i>局部变量</i></p><ul><li><p class="paragraph">局部范围的常量： 在声明时可以不指定初始值，但是在第一次使用是需要指定值。</p></li><li><p class="paragraph">类的常量属性： 既可以在声明时指定初始值、也可以在类的构造器中指定初始值、还可以在类中的init块中设置初始值。</p></li></ul><p class="paragraph"><i>顶层函数和顶层变量</i></p><ul><li><p class="paragraph">由于 Kotlin 程序编译的字节码必须遵守 JVM 规范，因此，直接在文件中定义的(顶层)变量 、(顶层)函数， kotlinc 将会自动生成一个名为“文件名首字母大写＋Kt ＂的类， 并将变量转换为该类的静态的 getterr 、 setter 方法（其中 val 声明的只有 getter 方法） ，函数则转换为该类的静态方法。</p></li></ul></div></div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

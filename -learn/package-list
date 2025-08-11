@@ -1,0 +1,13 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:基础语法////PointingToDeclaration/-learn/基础语法/index.html
+$dokka.location:基础语法//1-注释/#/PointingToDeclaration/-learn/基础语法/1-注释.html
+$dokka.location:基础语法//2-分割符/#/PointingToDeclaration/-learn/基础语法/2-分割符.html
+$dokka.location:基础语法//3-变量与常量/#/PointingToDeclaration/-learn/基础语法/3-变量与常量.html
+$dokka.location:基础语法//4-标识符/#/PointingToDeclaration/-learn/基础语法/4-标识符.html
+$dokka.location:基础语法//5-关键字/#/PointingToDeclaration/-learn/基础语法/5-关键字.html
+$dokka.location:基础语法//6-声明变量/#/PointingToDeclaration/-learn/基础语法/6-声明变量.html
+$dokka.location:基础语法//7-数据类型/#/PointingToDeclaration/-learn/基础语法/7-数据类型.html
+$dokka.location:基础语法//8-字符串/#/PointingToDeclaration/-learn/基础语法/8-字符串.html
+$dokka.location:基础语法//9-null安全/#/PointingToDeclaration/-learn/基础语法/9-null安全.html
+基础语法
