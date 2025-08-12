@@ -1,17 +1,23 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
 $dokka.location:基础语法////PointingToDeclaration/-learn/基础语法/index.html
-$dokka.location:基础语法//1-注释/#/PointingToDeclaration/-learn/基础语法/1-注释.html
-$dokka.location:基础语法//2-分割符/#/PointingToDeclaration/-learn/基础语法/2-分割符.html
-$dokka.location:基础语法//3-变量与常量/#/PointingToDeclaration/-learn/基础语法/3-变量与常量.html
-$dokka.location:基础语法//4-标识符/#/PointingToDeclaration/-learn/基础语法/4-标识符.html
-$dokka.location:基础语法//5-关键字/#/PointingToDeclaration/-learn/基础语法/5-关键字.html
-$dokka.location:基础语法//6-声明变量/#/PointingToDeclaration/-learn/基础语法/6-声明变量.html
-$dokka.location:基础语法//7-数据类型/#/PointingToDeclaration/-learn/基础语法/7-数据类型.html
-$dokka.location:基础语法//8-字符串/#/PointingToDeclaration/-learn/基础语法/8-字符串.html
-$dokka.location:基础语法//9-null安全/#/PointingToDeclaration/-learn/基础语法/9-null安全.html
+$dokka.location:基础语法//1-0-注释/#/PointingToDeclaration/-learn/基础语法/1-0-注释.html
+$dokka.location:基础语法//1-1-分割符/#/PointingToDeclaration/-learn/基础语法/1-1-分割符.html
+$dokka.location:基础语法//1-2-变量与常量/#/PointingToDeclaration/-learn/基础语法/1-2-变量与常量.html
+$dokka.location:基础语法//1-3-标识符/#/PointingToDeclaration/-learn/基础语法/1-3-标识符.html
+$dokka.location:基础语法//1-4-关键字/#/PointingToDeclaration/-learn/基础语法/1-4-关键字.html
+$dokka.location:基础语法//1-5-声明变量/#/PointingToDeclaration/-learn/基础语法/1-5-声明变量.html
+$dokka.location:基础语法//1-6-数据类型/#/PointingToDeclaration/-learn/基础语法/1-6-数据类型.html
+$dokka.location:基础语法//1-7-字符串/#/PointingToDeclaration/-learn/基础语法/1-7-字符串.html
+$dokka.location:基础语法//1-8-null安全/#/PointingToDeclaration/-learn/基础语法/1-8-null安全.html
+$dokka.location:基础语法//1-9-类型别名/#/PointingToDeclaration/-learn/基础语法/1-9-类型别名.html
 $dokka.location:运算符和表达式////PointingToDeclaration/-learn/运算符和表达式/index.html
-$dokka.location:运算符和表达式//0-运算符和表达式简介/#/PointingToDeclaration/-learn/运算符和表达式/0-运算符和表达式简介.html
-$dokka.location:运算符和表达式//单目运算符/#/PointingToDeclaration/-learn/运算符和表达式/单目运算符.html
+$dokka.location:运算符和表达式//2-0-运算符和表达式简介/#/PointingToDeclaration/-learn/运算符和表达式/2-0-运算符和表达式简介.html
+$dokka.location:运算符和表达式//2-1-单目运算符/#/PointingToDeclaration/-learn/运算符和表达式/2-1-单目运算符.html
+$dokka.location:运算符和表达式//2-2-双目算术运算符/#/PointingToDeclaration/-learn/运算符和表达式/2-2-双目算术运算符.html
+$dokka.location:运算符和表达式//2-3-in和!in运算符/#/PointingToDeclaration/-learn/运算符和表达式/2-3-in和!in运算符.html
+$dokka.location:运算符和表达式//2-4-索引访问操作符/#/PointingToDeclaration/-learn/运算符和表达式/2-4-索引访问操作符.html
+$dokka.location:运算符和表达式//2-5-调用操作符/#/PointingToDeclaration/-learn/运算符和表达式/2-5-调用操作符.html
+$dokka.location:运算符和表达式//2-6-广义赋值运算符/#/PointingToDeclaration/-learn/运算符和表达式/2-6-广义赋值运算符.html
 基础语法
 运算符和表达式

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>1-1-分割符</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../index.html">
+                    Learn
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+1.0-SNAPSHOT        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":dokkaHtml/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":dokkaHtml/main"
+                                       data-filter=":dokkaHtml/main"/>
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    Learn
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="member" id="content" pageIds="Learn::基础语法//1-1-分割符/#/PointingToDeclaration//769193423">
+  <div class="breadcrumbs"><a href="../../index.html">Learn</a><span class="delimiter">/</span><a href="index.html">基础语法</a><span class="delimiter">/</span><span class="current">1-1-分割符</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>1-1-分割符</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="1-1-分割符.html"><span class="token function">1-1-分割符</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><p class="paragraph">Kotlin 里分隔符</p><ul><li><p class="paragraph">分号（；）</p></li><li><p class="paragraph">花括号（｛｝）</p></li><li><p class="paragraph">方括号（［］）</p></li><li><p class="paragraph">圆括号（（））</p></li><li><p class="paragraph">空格（ ）</p></li><li><p class="paragraph">圆点（．） 都具有特殊的分隔作用</p></li></ul><h2 class="">1.分号(每条语句的结尾)</h2><p class="paragraph">Kotlin 并不强制要求每条语句必须以分号结尾 但如果一行内有多条语句时，需要以分号结尾</p><h2 class="">2.花括号(定义一个代码块)</h2><ul><li><p class="paragraph">类体部分</p></li><li><p class="paragraph">枚举</p></li><li><p class="paragraph">方法体</p></li><li><p class="paragraph">条件语句中的条件执行体</p></li><li><p class="paragraph">循环语句中的循环体 这些通常都需要在花括号内定义</p></li></ul><h2 class="">3.方括号(索引运算符)</h2><p class="paragraph">其主要作用是用于访问或设置值</p><ul><li><p class="paragraph">数组元素</p></li><li><p class="paragraph">List 集合元素</p></li><li><p class="paragraph">Map 集合元素 。 方括号通常紧跟数组变量名、 List 变量名或 Map 变量名， 而在方括号里指定希望访问的数组元素、 List 元素的索引或 Map 元素的 key 。</p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">//下面代码试图对名为 a 的数组的第四个元素赋值<br>a[3] = 3<br>//下面代码试图对名为 scores 的字典中 key 为 Kotlin 的元紊赋值<br>scores [&quot;kotlin&quot;] = 92</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class="">4.圆括号(用于定义形参或传入值，构造函数还可以通过形参设置值)</h2><p class="paragraph">在定义函数、方法时必须使用圆括号来包含所有的形参声明， 在调用函数时也必须使用圆括号来传入实参值 。 不仅如此，圆括号还可以将表达式中某个部分括成一个整体，保证这个部分优先计算 。</p><h2 class="">5.空格(用于分隔一条语句的不同部分)</h2><p class="paragraph">空格可以出现在任意地方，也可以多个空格，但是不要把一个变量名分成两个，这样会导致程序出错</p><h2 class="">6.圆点(调用类或实例中的某个成员)</h2></div></div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
