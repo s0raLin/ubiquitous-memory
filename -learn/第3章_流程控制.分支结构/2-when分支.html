@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>2-when分支</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../index.html">
+                    Learn
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+1.0-SNAPSHOT        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":dokkaHtml/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":dokkaHtml/main"
+                                       data-filter=":dokkaHtml/main"/>
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    Learn
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="member" id="content" pageIds="Learn::第3章_流程控制.分支结构//2-when分支/#/PointingToDeclaration//769193423">
+  <div class="breadcrumbs"><a href="../../index.html">Learn</a><span class="delimiter">/</span><a href="index.html">第3章_流程控制.分支结构</a><span class="delimiter">/</span><span class="current">2-when分支</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>2-when分支</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="2-when分支.html"><span class="token function">2-when分支</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><p class="paragraph">when分支取代了Java原有的switch语句</br></p><div class="sample-container"><pre><code class="block lang-java" theme="idea">public class SwitchTest {<br>    public static void main(String[] args) {<br>         char score = 'B';<br>         switch(score) {<br>             case 'A':<br>                 System.out.println(&quot;优秀&quot;); break;<br>             case 'B':<br>                 System.out.println(&quot;良好&quot;); break;<br>             case 'C':<br>                 System.out.println(&quot;中等&quot;); break;<br>             case 'D':<br>                 System.out.println(&quot;及格&quot;); break;<br>             default:<br>                 System.out.println(&quot;不及格&quot;);<br>         }<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">上述程序使用Kt实现</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    val score = 'B'<br>    when(score) {<br>        'A' -&gt; println(&quot;优秀&quot;)<br>        'B' -&gt; println(&quot;良好&quot;)<br>        'C' -&gt; println(&quot;中等&quot;)<br>        'D' -&gt; println(&quot;及格&quot;)<br>        else -&gt; println(&quot;不及格&quot;)<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">通过比较可以发现，when的改进:</p><ul><li><p class="paragraph">不再需要case关键字</p></li><li><p class="paragraph">不再需要break</p></li><li><p class="paragraph">冒号:改为<code class="lang-kotlin">-&gt;</code></p></li><li><p class="paragraph">else更明确，更有意义(default代表默认，而switch中代表否则) </br> when分支可以包含多条语句，这些语句通过<code class="lang-kotlin">{}</code>包含成一整个代码块， 例如：</p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    val score = 'B'<br>    when(score) {<br>        'A' -&gt; {<br>            println(&quot;优秀&quot;)<br>            println(&quot;望百尺竿头更进一步&quot;)<br>        }<br>        'B' -&gt; {<br>            println(&quot;良好&quot;)<br>            println(&quot;不拼一把，你都不知道自己的能力&quot;)<br>        }<br>        'C' -&gt; println(&quot;中等&quot;)<br>        'D' -&gt; println(&quot;及格&quot;)<br>        else -&gt; {<br>            println(&quot;不及格&quot;)<br>            println(&quot;啥也不说了，下次再来&quot;)<br>        }<br>    }<br>}<br>/*<br>输出:<br>良好<br>不拼一把，你都不知道自己的能力<br>*/</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">如果 when 分支只是 switch 分支的简化，那也不过如此。事实上， when 分支比 switch 分 支更强大，下面是 when 分支的 3 个小改进。</p><ul><li><p class="paragraph">when 分支可以匹配多个值。</p></li><li><p class="paragraph">when 分支匹配不要求是常量，可以是任意表达式 。</p></li><li><p class="paragraph">when 分支对条件表达式的类型没有任何要求 。</br></p></li></ul><p class="paragraph">例如</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>     val input = readLine() ?: &quot;&quot;<br><br>     when (input.lowercase()) { // 条件表达式是字符串<br>         &quot;yes&quot;, &quot;y&quot;, &quot;ok&quot; -&gt; println(&quot;你选择了同意&quot;) // 匹配多个值<br>         &quot;no&quot;, &quot;n&quot; -&gt; println(&quot;你选择了拒绝&quot;)<br>         else -&gt; println(&quot;无法识别的输入&quot;)<br>     }<br><br>     val num = 15<br>     when { // 这里没有指定条件表达式，可以写任意逻辑判断<br>         num % 2 == 0 -&gt; println(&quot;$num 是偶数&quot;)<br>         num in 10..20 -&gt; println(&quot;$num 在 10 到 20 之间&quot;)<br>         else -&gt; println(&quot;其它情况&quot;)<br>     }<br>    // 分支匹配任意表达式（这里是函数返回值）<br>    fun getLuckyNumber() = 7<br>    val guess = 7<br>    when (guess) {<br>        getLuckyNumber() -&gt; println(&quot;猜对了！&quot;)<br>        else -&gt; println(&quot;猜错了！&quot;)<br>    }<br>}<br>/*<br> * 输出：<br> * 输入: y<br> * 输出: 你选择了同意<br> * 15 在 10 到 20 之间<br> * 猜对了！<br> **/</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class="">when表达式</h2><p class="paragraph">与if分支同样的，when也可以作为表达式 例如:</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    val score = 'B'<br>    val str = when(score) {<br>        'A' -&gt; { println(&quot;望百尺竿头更进一步&quot;);&quot;优秀&quot; }<br>        'B' -&gt; { println(“不拼一把，你都不知道自己的能力&quot;);“良好” }<br>        'C' -&gt; “中等”<br>        'D' -&gt; “及格”<br>        else -&gt; { println(&quot;啥也不说了，下次再来&quot;);&quot;不及格&quot; }<br>    }<br>    println(str)<br>}<br>/*<br>输出：<br>不拼一把，你都不知道自己的能力<br>良好<br>*/</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class="">when分支处理范围</h2><p class="paragraph">通过<code class="lang-kotlin">in</code>和<code class="lang-kotlin">!in</code>运算符，我们还可以检查表达式是否位于指定区间或集合中，例如：</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    val score = 85<br><br>    when (score) {<br>        in 90..100 -&gt; println(&quot;优秀&quot;)<br>        in 75..89 -&gt; println(&quot;良好&quot;)<br>        in 60..74 -&gt; println(&quot;及格&quot;)<br>        !in 0..100 -&gt; println(&quot;成绩不合法&quot;)<br>        else -&gt; println(&quot;不及格&quot;)<br>    }<br>}<br>/*<br>输出：<br>良好<br>*/</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class="">when分支处理类型</h2><p class="paragraph">通过<code class="lang-kotlin">is</code>和<code class="lang-kotlin">!is</code>语句，可以用when分支检查是否为指定类型</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun describe(obj: Any) {<br>    when (obj) {<br>        is String -&gt; println(&quot;这是一个字符串，长度为 ${obj.length}&quot;)<br>        is Int -&gt; println(&quot;这是一个整数，值为 $obj&quot;)<br>        is Double -&gt; println(&quot;这是一个双精度浮点数，值为 $obj&quot;)<br>        !is Number -&gt; println(&quot;这不是数字类型&quot;)<br>        else -&gt; println(&quot;其他类型&quot;)<br>    }<br>}<br><br>fun main() {<br>    describe(&quot;Kotlin&quot;)   // 匹配 is String 分支<br>    describe(42)         // 匹配 is Int 分支<br>    describe(3.14)       // 匹配 is Double 分支<br>    describe(true)       // 匹配 !is Number 分支<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">代码解释 describe函数传入一个Any类型，函数体判断是否是某个类型</p><ul><li><p class="paragraph">is：判断变量是否是某种类型，并且自动智能类型转换（smart cast）。</p></li><li><p class="paragraph">!is：判断变量是否不是某种类型。</br> when 结合类型判断时非常适合写多类型处理逻辑。</p></li></ul><h2 class="">when 条件分支</h2><p class="paragraph">when完全可以取代if-else-if-else...链，每个分支都是一个布尔表达式， 例如：</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun grade(score: Int) {<br>    when {<br>        score &gt;= 90 -&gt; println(&quot;优秀&quot;)<br>        score &gt;= 75 -&gt; println(&quot;良好&quot;)<br>        score &gt;= 60 -&gt; println(&quot;及格&quot;)<br>        else -&gt; println(&quot;不及格&quot;)<br>    }<br>}<br><br>fun main() {<br>    grade(95)  // 输出：优秀<br>    grade(80)  // 输出：良好<br>    grade(65)  // 输出：及格<br>    grade(50)  // 输出：不及格<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">从上面代码可以看出，当布尔表达式为true时，when将会执行该分支的代码</p></div></div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

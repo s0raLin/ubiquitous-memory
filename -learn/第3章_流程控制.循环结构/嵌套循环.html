@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>嵌套循环</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../index.html">
+                    Learn
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+1.0-SNAPSHOT        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":dokkaHtml/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":dokkaHtml/main"
+                                       data-filter=":dokkaHtml/main"/>
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    Learn
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="member" id="content" pageIds="Learn::第3章_流程控制.循环结构//嵌套循环/#/PointingToDeclaration//769193423">
+  <div class="breadcrumbs"><a href="../../index.html">Learn</a><span class="delimiter">/</span><a href="index.html">第3章_流程控制.循环结构</a><span class="delimiter">/</span><span class="current">嵌套循环</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>嵌套循环</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="嵌套循环.html"><span class="token function">嵌套循环</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><p class="paragraph">Kotlin没有提供goto语句来控制程序的跳转，这种做法避免了goto语句的滥用。 Kotlin提供了continue、break来控制循环结构，除此之外，使用return可以结束整个方法，相当于结束了整个循环</p><h2 class="">使用break结束循环</h2><p class="paragraph">某些时候，需要在某种条件出现时强行中止循环，而不是等到循环条件为false时才跳出循环。</br> 一旦遇到了break,将完全结束循环，开始执行循环之后的代码,例如：</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    for (i in 1..10) {<br>        println(&quot;当前数字: $i&quot;)<br>        if (i == 5) {<br>            println(&quot;遇到5，结束循环&quot;)<br>            break  // 一旦执行到这里，循环立即终止<br>        }<br>    }<br>    println(&quot;循环结束，继续执行后续代码&quot;)<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">当break加上标签时，不仅可以跳出本循环，而且可以跳出整个循环，例如</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    outer@ for (i in 1..3) {       // 外层循环，标签名为 outer<br>        for (j in 1..3) {           // 内层循环<br>            println(&quot;i = $i, j = $j&quot;)<br>            if (i == 2 &amp;&amp; j == 2) {<br>                println(&quot;触发 break@outer&quot;)<br>                break@outer         // 跳出 outer 标签对应的循环<br>            }<br>        }<br>    }<br>    println(&quot;循环结束&quot;)<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">代码解释：</p><ul><li><p class="paragraph">普通 break 只会跳出最内层循环。</p></li><li><p class="paragraph">break@outer 会直接结束外层 <code class="lang-kotlin">outer</code> 循环,相当于结束了整个循环</p></li></ul><h2 class="">使用 continue 忽略本次循环的剩下语句</h2><p class="paragraph">使用continue可以跳过本次循环紧接着开始下一次循环，与break不同的是continue不是完全中止循环 </br> 示例</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    for (i in 1..5) {<br>        if (i == 3) {<br>            continue // 跳过本次循环，直接进入下一次<br>        }<br>        print(i)<br>    }<br>}<br>/*<br>输出：<br>1245<br>*/</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">与break类似，continue后也可以紧跟一个标签，用于跳出标签所标识循环的当次循环的剩下语句 ， 重新开始下一次循环</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    outer@ for (i in 1..3) {<br>        for (j in 1..3) {<br>            if (j == 2) {<br>                continue@outer // 跳过 outer 标签循环的本次迭代<br>            }<br>            println(&quot;i = $i, j = $j&quot;)<br>        }<br>    }<br>}<br>/*<br>输出：<br>i = 1, j = 1<br>i = 2, j = 1<br>i = 3, j = 1<br>*/</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class="">使用return结束方法</h2><p class="paragraph">return 用于从最直接包围它的方法、函数或者匿名函数返回 。当函数或方法执行到一条 return 语句时（ return 关键字后可以跟变量、常量和表达式，也可什么都不返回），这个函数或方法将被结束。</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun findFirstEven(numbers: List&lt;Int&gt;): Int? {<br>    for (num in numbers) {<br>        if (num % 2 == 0) {<br>            return num // 找到第一个偶数就结束方法，并返回它<br>        }<br>    }<br>    return null // 如果没有找到偶数，返回 null<br>}<br><br>fun main() {<br>    val list = listOf(1, 3, 5, 6, 7, 9)<br>    val result = findFirstEven(list)<br>    if (result != null) {<br>        println(&quot;第一个偶数是：$result&quot;)<br>    } else {<br>        println(&quot;没有找到偶数&quot;)<br>    }<br>}<br>/*<br>运行结果：<br>第一个偶数是：6<br>*/</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

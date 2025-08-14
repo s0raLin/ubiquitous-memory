@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>3-1-分支结构</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../index.html">
+                    Learn
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+1.0-SNAPSHOT        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":dokkaHtml/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":dokkaHtml/main"
+                                       data-filter=":dokkaHtml/main"/>
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    Learn
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="member" id="content" pageIds="Learn::第3章_流程控制.分支结构//3-1-分支结构/#/PointingToDeclaration//769193423">
+  <div class="breadcrumbs"><a href="../../index.html">Learn</a><span class="delimiter">/</span><a href="index.html">第3章_流程控制.分支结构</a><span class="delimiter">/</span><span class="current">3-1-分支结构</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>3-1-分支结构</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="3-1-分支结构.html"><span class="token function">3-1-分支结构</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><p class="paragraph">kotlin提供了两个关键字用于表示分支结构，即if和when</p><h2 class="">if分支</h2><p class="paragraph">语法:</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">//第一种形式<br>if(expression) {<br>    statements...<br>}<br>//第二种形式<br>if(expression) {<br>    statements...<br>}else {<br>    statements...<br>}<br>//第三种形式<br>if(expression) {<br>    statements...<br>} else if(expression) {<br>    statements...<br>} else {<br>    statements...<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">其中<code class="lang-kotlin">else if</code>可以有多个，上述使用<code class="lang-kotlin">{}</code>括起来的是代码块， 一个代码块被当作一个整体来执行,除非使用关键字提前退出，如下</p><ul><li><p class="paragraph">return 结束整个方法,可用于循环和分支</p></li><li><p class="paragraph">break 退出当前代码块，线程继续往下执行，用于循环结构</p></li><li><p class="paragraph">continue 跳转到下一次执行，用于循环结构 </br> 示例代码</p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    val age = 30<br>    if(age&gt;20) {<br>        //只有当age&gt;20时，该代码块才被执行<br>        //使用{}扩起来的代码块是一个整体，要么一起执行，要么都不执行<br>        println(&quot;年龄大于20岁&quot;)<br>        println(&quot;20岁以上的人应该学会承担责任&quot;)<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">如果代码块只有一条语句，<code class="lang-kotlin">{}</code>省略</br></p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    val age = 5<br>    if(age&gt;4)<br>        println(&quot;年龄大于4&quot;)<br>    else<br>        println(”年龄不大于4“)<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">代码块内可以是1条或多条语句，也可以是0条语句，保留大括号会有更好的可读性</br> 对于if分支，有一个容易出现的逻辑问题，这个问题不属于语法问题，出现错误结果</br> 示例代码</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    val age = 50<br>    if(age&gt;20) {<br>        println(&quot;青年人&quot;)<br>    } else if(age&gt;40) {<br>        println(&quot;中年人&quot;)<br>    } else if(age&gt;60)  {<br>        println(&quot;老年人&quot;)<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">从表面上看，程序没有问题，但是结果居然是20岁是青年人，显然出了问题</br></p><p class="paragraph">上述代码等价于如下格式</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    val age = 50<br>    if(age&gt;20) {<br>        println(&quot;青年人&quot;)<br>    } else if(age&gt;40 &amp;&amp; !(age&gt;20)) {//在原本的if条件中添加了else的隐含条件<br>        println(&quot;中年人&quot;)<br>    } else if(age&gt;60 &amp;&amp; !(age&gt;20) &amp;&amp; !(age&gt;40 &amp;&amp; !(age&gt;20))) {//在原本的if条件中添加了else的隐含条件<br>        println(&quot;老年人&quot;)<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">而<code class="lang-kotlin">!(age&gt;20)</code>又可以写成<code class="lang-kotlin">age&lt;=20</code>,因此<code class="lang-kotlin">age&gt;40 &amp;&amp; !(age&gt;20)</code>又可以改写写成<code class="lang-kotlin">age&gt;40&amp;&amp;age&lt;=20</code>。</br> 正确的判断逻辑:</p><ul><li><p class="paragraph">当age>60，判断为&quot;老年人&quot;</p></li><li><p class="paragraph">当age>40，并且age<=60即!(age>60)，判断为&quot;中年人&quot;</p></li><li><p class="paragraph">当age>20，并且age<=40即!(age>40)，判断为&quot;青年人&quot; </br> 因此当使用if-else语句进行流程控制时，一定不要忽略了else所带的隐含条件</br> 如果每次都需要去计算if和else的交集是一件很繁琐的事情</br> 为避免上述错误情况，在使用if-else时有一条基本规则：</p></li><li><p class="paragraph"><i>总是优先把包含范围小的条件放到前面处理</i> ，如age>60和age>20,明显age>60的范围更小，因此应该先处理age>60的情况</p></li></ul><h2 class="">if表达式</h2><p class="paragraph">Kt的if可以作为表达式使用。也就是说，整个if-else最终会返回一个值，因此if可以代替Java的三目运算符<code class="lang-kotlin">?:</code> ， 例如：</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    val age = 20<br>    //将if表达式赋值给变量<br>    val str = if(age&gt;18) &quot;大于18岁&quot; else if(age&lt;18) &quot;小于18岁&quot; else &quot;等于20岁&quot;<br>    println(str)<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">如果分支包含多条语句，此时代码块最后一条语句作为整个代码块的值， 例如：</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    val age = 20<br>    //将if表达式赋值给变量<br>    val str = if(age&gt;18) {<br>        println(&quot;大于18的分支&quot;)<br>        &quot;大于18岁&quot;<br>    } else if(age&lt;18) {<br>        println(&quot;小于18的分支&quot;)<br>        &quot;小于18岁&quot;<br>    } else {<br>        println(&quot;等于18的分支&quot;)<br>        &quot;等于18岁&quot;<br>    }<br>    println(str)<br>}<br>/*<br>打印结果:<br>大于18的分支<br>大于18岁<br>*/</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

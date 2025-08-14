@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>1-4-关键字</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../index.html">
+                    Learn
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+1.0-SNAPSHOT        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":dokkaHtml/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":dokkaHtml/main"
+                                       data-filter=":dokkaHtml/main"/>
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    Learn
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="member" id="content" pageIds="Learn::第1章_基础语法//1-4-关键字/#/PointingToDeclaration//769193423">
+  <div class="breadcrumbs"><a href="../../index.html">Learn</a><span class="delimiter">/</span><a href="index.html">第1章_基础语法</a><span class="delimiter">/</span><span class="current">1-4-关键字</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>1-4-关键字</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="1-4-关键字.html"><span class="token function">1-4-关键字</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><p class="paragraph">Kotlin 的关键字可分为 3 类。</p><ul><li><p class="paragraph">硬关键字：这些关键字无论在什么情况下都不能用作标识符。</p></li><li><p class="paragraph">软关键字：这些关键字可以在它们不起作用的上下文中用作标识符。</p></li><li><p class="paragraph">修饰符关键字：这些关键字也可以在代码中用作标识符。</p></li></ul><h3 class="">Kotlin 语言的硬关键字（Reserved Keywords）说明：</h3><ul><li><p class="paragraph">as —— 用于类型转换，或者给 import 语句指定别名。</p><p class="paragraph">  as? —— 类型安全的类型转换运算符，转换失败时返回 null。</p></li><li><p class="paragraph">break —— 中断循环。</p></li><li><p class="paragraph">class —— 声明类。</p></li><li><p class="paragraph">continue —— 忽略本次循环剩余语句，直接进入下一次循环。</p></li><li><p class="paragraph">do —— 用于 do-while 循环。</p></li><li><p class="paragraph">else —— if 分支的 else 部分。</p></li><li><p class="paragraph">false —— Boolean 类型中的假值。</p></li><li><p class="paragraph">for —— 用于 for 循环。</p></li><li><p class="paragraph">fun —— 声明函数。</p></li><li><p class="paragraph">if —— 条件判断语句。</p></li><li><p class="paragraph">in —— 用于 for 循环中；也可作为双目运算符，检查值是否在区间或集合中；还能用于 when 表达式；泛型参数修饰符，表示逆变。</p></li><li><p class="paragraph">!in —— 是 in 的反义，检查不在区间或集合中。</p></li><li><p class="paragraph">is —— 类型检查（类似 Java 的 instanceof）。</p></li><li><p class="paragraph">!is —— is 的反义，用于类型检查。</p></li><li><p class="paragraph">null —— 空值字面量。</p></li><li><p class="paragraph">object —— 声明对象表达式或命名对象。</p></li><li><p class="paragraph">package —— 指定当前文件所属包。</p></li><li><p class="paragraph">return —— 函数返回。</p></li><li><p class="paragraph">super —— 引用父类方法或属性，或调用父类构造器。</p></li><li><p class="paragraph">this —— 当前类实例或调用当前类的其他构造器。</p></li><li><p class="paragraph">throw —— 抛出异常。</p></li><li><p class="paragraph">true —— Boolean 类型中的真值。</p></li><li><p class="paragraph">try —— 异常处理的开始。</p></li><li><p class="paragraph">typealias —— 定义类型别名。</p></li><li><p class="paragraph">val —— 声明只读变量或属性。</p></li><li><p class="paragraph">var —— 声明可变变量或属性。</p></li><li><p class="paragraph">when —— 条件表达式。</p></li><li><p class="paragraph">while —— 用于 while 或 do-while 循环。</p></li></ul><h3 class="">Kotlin 的软关键字（Soft Keywords）说明：</h3><ul><li><p class="paragraph">by —— 将接口或父类实现代理给其他对象。</p></li><li><p class="paragraph">catch —— 异常处理中的捕获块。</p></li><li><p class="paragraph">constructor —— 声明构造器。</p></li><li><p class="paragraph">delegate —— 注解，用于指定委托属性存储委托实例字段。</p></li><li><p class="paragraph">dynamic —— 主要用于 Kotlin/JS，表示动态类型。</p></li><li><p class="paragraph">field —— 注解，用于指定属性的幕后字段。</p></li><li><p class="paragraph">file —— 注解，用于指定修饰当前源文件。</p></li><li><p class="paragraph">finally —— 异常处理中的 finally 块。</p></li><li><p class="paragraph">get —— 声明属性的 getter，或指定注解修饰 getter。</p></li><li><p class="paragraph">import —— 导入包。</p></li><li><p class="paragraph">init —— 声明初始化块。</p></li><li><p class="paragraph">param —— 注解，用于修饰构造器参数。</p></li><li><p class="paragraph">property —— 注解，修饰整个属性（Java 不可见）。</p></li><li><p class="paragraph">receiver —— 注解，修饰扩展方法或扩展属性的接收者。</p></li><li><p class="paragraph">set —— 声明属性的 setter，或注解修饰 setter。</p></li><li><p class="paragraph">setparam —— 注解，修饰 setter 方法参数。</p></li><li><p class="paragraph">where —— 为泛型参数添加约束。</p></li></ul><h3 class="">Kotlin 的修饰符关键字（Modifiers）说明：</h3><ul><li><p class="paragraph">abstract —— 修饰抽象类或抽象成员。</p></li><li><p class="paragraph">annotation —— 声明注解类。</p></li><li><p class="paragraph">companion —— 声明伴生对象。</p></li><li><p class="paragraph">const —— 声明编译时常量。</p></li><li><p class="paragraph">crossinline —— 禁止在传给内联函数的 Lambda 中做非局部返回。</p></li><li><p class="paragraph">data —— 声明数据类。</p></li><li><p class="paragraph">enum —— 声明枚举类。</p></li><li><p class="paragraph">external —— 声明外部实现方法（类似 Java 的 native）。</p></li><li><p class="paragraph">final —— 禁止重写。</p></li><li><p class="paragraph">infix —— 声明函数可用中缀调用。</p></li><li><p class="paragraph">inline —— 声明内联函数，允许 Lambda 局部返回。</p></li><li><p class="paragraph">inner —— 声明内部类，可以访问外部类实例。</p></li><li><p class="paragraph">internal —— 声明在模块内可见。</p></li><li><p class="paragraph">lateinit —— 用于非空属性，允许在构造器外初始化。</p></li><li><p class="paragraph">noinline —— 禁止内联函数中某些 Lambda 内联。</p></li><li><p class="paragraph">open —— 允许继承的类或可重写的成员。</p></li><li><p class="paragraph">out —— 泛型参数协变修饰符。</p></li><li><p class="paragraph">override —— 重写父类成员。</p></li><li><p class="paragraph">private —— 私有访问权限。</p></li><li><p class="paragraph">protected —— 受保护访问权限。</p></li><li><p class="paragraph">public —— 公共访问权限。</p></li><li><p class="paragraph">reified —— 用于内联函数的泛型参数，允许类型参数在运行时可用。</p></li><li><p class="paragraph">sealed —— 声明密封类。</p></li><li><p class="paragraph">suspend —— 标记挂起函数（协程相关）。</p></li><li><p class="paragraph">tailrec —— 声明尾递归函数。</p></li><li><p class="paragraph">vararg —— 可变参数修饰符。</p></li></ul></div></div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
