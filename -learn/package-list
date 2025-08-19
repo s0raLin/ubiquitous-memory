@@ -34,8 +34,25 @@ $dokka.location:第3章_流程控制.循环结构//3-for-in循环/#/PointingToDe
 $dokka.location:第3章_流程控制.循环结构//嵌套循环/#/PointingToDeclaration/-learn/第3章_流程控制.循环结构/嵌套循环.html
 $dokka.location:第3章_流程控制////PointingToDeclaration/-learn/第3章_流程控制/index.html
 $dokka.location:第3章_流程控制//3-0-流程控制简介/#/PointingToDeclaration/-learn/第3章_流程控制/3-0-流程控制简介.html
+$dokka.location:第4章_集合与数组.数组////PointingToDeclaration/-learn/第4章_集合与数组.数组/index.html
+$dokka.location:第4章_集合与数组.数组//0-数组简介/#/PointingToDeclaration/-learn/第4章_集合与数组.数组/0-数组简介.html
+$dokka.location:第4章_集合与数组.数组//1-数组/#/PointingToDeclaration/-learn/第4章_集合与数组.数组/1-数组.html
+$dokka.location:第4章_集合与数组.集合////PointingToDeclaration/-learn/第4章_集合与数组.集合/index.html
+$dokka.location:第4章_集合与数组.集合//0-集合简介/#/PointingToDeclaration/-learn/第4章_集合与数组.集合/0-集合简介.html
+$dokka.location:第4章_集合与数组.集合//1-Set集合/#/PointingToDeclaration/-learn/第4章_集合与数组.集合/1--set集合.html
+$dokka.location:第4章_集合与数组.集合//2-List集合/#/PointingToDeclaration/-learn/第4章_集合与数组.集合/2--list集合.html
+$dokka.location:第4章_集合与数组.集合//3-Map集合/#/PointingToDeclaration/-learn/第4章_集合与数组.集合/3--map集合.html
+$dokka.location:第5章_函数和Lambda表达式////PointingToDeclaration/-learn/第5章_函数和Lambda表达式/index.html
+$dokka.location:第5章_函数和Lambda表达式//5-0-函数简介/#/PointingToDeclaration/-learn/第5章_函数和Lambda表达式/5-0-函数简介.html
+$dokka.location:第5章_函数和Lambda表达式//5-1-定义和调用函数/#/PointingToDeclaration/-learn/第5章_函数和Lambda表达式/5-1-定义和调用函数.html
+$dokka.location:第5章_函数和Lambda表达式//5-2-函数递归/#/PointingToDeclaration/-learn/第5章_函数和Lambda表达式/5-2-函数递归.html
+$dokka.location:第5章_函数和Lambda表达式//5-3-函数重载/#/PointingToDeclaration/-learn/第5章_函数和Lambda表达式/5-3-函数重载.html
+$dokka.location:第5章_函数和Lambda表达式//5-4-局部函数/#/PointingToDeclaration/-learn/第5章_函数和Lambda表达式/5-4-局部函数.html
 第1章_基础语法
 第2章_运算符和表达式
 第3章_流程控制
 第3章_流程控制.分支结构
 第3章_流程控制.循环结构
+第4章_集合与数组.数组
+第4章_集合与数组.集合
+第5章_函数和Lambda表达式

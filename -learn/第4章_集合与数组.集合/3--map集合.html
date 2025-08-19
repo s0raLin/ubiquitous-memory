@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>3-Map集合</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../index.html">
+                    Learn
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+1.0-SNAPSHOT        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":dokkaHtml/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":dokkaHtml/main"
+                                       data-filter=":dokkaHtml/main"/>
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    Learn
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="member" id="content" pageIds="Learn::第4章_集合与数组.集合//3-Map集合/#/PointingToDeclaration//769193423">
+  <div class="breadcrumbs"><a href="../../index.html">Learn</a><span class="delimiter">/</span><a href="index.html">第4章_集合与数组.集合</a><span class="delimiter">/</span><span class="current">3-Map集合</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>3-Map集合</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="3--map集合.html"><span class="token function">3-Map集合</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><p class="paragraph">与Java相同，Kotlin中的Map也用于保存 key-value 对。不同的是Kotlin中Map也分为可变和不可变 </br> 实际上 Kotlin 并没有真正为只币4 平台实现任何 Map 集合类（只是通过别名借用了 Java集合框架的类）， 因此不推荐通过构造器创建 Map 集合，而是推荐使用 Kotlin 提供的工具函数来创建 Map 集合。</p><h2 class="">创建Map集合</h2><ul><li><p class="paragraph">mapOf(): 该函数返回一个不可变的Map集合，该函数接收0或多个key-value作为Map的元素。</p></li><li><p class="paragraph">mutableMapOf(): 该函数返回可变的 MutableMap 集合。该函数可接受 0 个或多个key-value 对， 这些 key-value 对将作为集合的元素 注意事项：</br> 对于 Kotlin 1. l 而言 ，上面两个函数实际返回的是 LinkedHashMap 的实例 上面两个方法返回的 Map 集合都会记住 key-value 对的添加顺序 一一 这是由 LinkedHashMap 的特征所决定的 。</p></li><li><p class="paragraph">hashMapOf（）： 该函数返回可变的 HashMap 集合。该函数可接受 0 个或多个 key-value 对，这些 key-value 对将作为 Map 的元素。</p></li><li><p class="paragraph">linkedMapOf（）：该函数返回可变的 LinkedHashMap 集合 。该函数可接受 0 个或多个 key-value 对，这些 key-value 对将作为 Map 的元素 。 注意事项：</br> 如果开发者明确希望在程序中使用LinkedHashMap 集合，则建议使用 linkedMapOf()函数，而不要使用 mapOf()、 mutableMapOf()这两个函数，虽然它 们在 Kotlin 1.1 中确实也返回 LinkedHashMap 集合</p></li><li><p class="paragraph">sortedMapOf()：该函数返回可变的 TreeMap 集合。该函数可接受 0 个或多个 key-value 对，这些 key-value 对将作为 Map 的元素。</br></p></li></ul><p class="paragraph">示例代码</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main(args: Array&lt;String&gt;) {<br>    // 创建不可变 Map，返回值是 Map<br>    val map = mapOf(&quot;Java&quot; to 86, &quot;Kotlin&quot; to 92, &quot;Go&quot; to 78)<br>    println(map) // key-value 对按添加顺序排列 输出： {Java=86, Kotlin=92, Go=78}<br><br>    // 创建可变 Map，返回值是 MutableMap<br>    val mutableMap = mutableMapOf(&quot;Java&quot; to 86, &quot;Kotlin&quot; to 92, &quot;Go&quot; to 78)<br>    println(mutableMap) // key-value 对按添加顺序排列 输出：{Java=86, Kotlin=92, Go=78}<br><br>    println(&quot;mapOf 的返回对象的实际类型: ${map.javaClass}&quot;) //class java.util.LinkedHashMap<br>    println(&quot;mutableMapOf 的返回对象的实际类型: ${mutableMap.javaClass}&quot;) //class java.util.LinkedHashMap<br><br>    // 创建 HashMap 集合<br>    val hashMap = hashMapOf(&quot;Java&quot; to 86, &quot;Kotlin&quot; to 92, &quot;Go&quot; to 78)<br>    println(hashMap) // 不保证 key-value 对的顺序 输出：{Go=78, Java=86, Kotlin=92}<br><br>    // 创建 LinkedHashMap 集合<br>    val linkedHashMap = linkedMapOf(&quot;Java&quot; to 86, &quot;Kotlin&quot; to 92, &quot;Go&quot; to 78)<br>    println(linkedHashMap) // key-value 对按添加顺序排列 输出：{Java=86, Kotlin=92, Go=78}<br><br>    // 创建 TreeMap（SortedMap）集合<br>    val treeMap = sortedMapOf(&quot;Java&quot; to 86, &quot;Kotlin&quot; to 92, &quot;Go&quot; to 78)<br>    println(treeMap) // key-value 对按 key 由小到大排列 输出：{Go=78, Java=86, Kotlin=92}<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">从上面的运行结果可以看出，上面有 4 个工具函数创建的 Map 集合都能维护 key-value 对 的顺序:</p><ul><li><p class="paragraph">其中 mapOf()、 mutableMapOf()、 linkedMapOf()创建的 Map 集合能维护元素的添加顺 序</p></li><li><p class="paragraph">sortedMapOf()函数创建的 Map 集合会按照 key 大小对 key-value 对排序。 如果真正希望 Map 集合不保证 key-value 对的顺序，只有通过 hashMapOf()函数创建 Map 集合才行。这也是由 Java 集合框架提供的 HashMap 、 LinkedHashMap 、 TreeMap 实现类的特 征所决定的。</p></li><li><p class="paragraph">Java 的 Set集合其实是由 Map 集合所维护的，因此如果有某个 Set，那么就一定有对应的 Map 。</p></li></ul><h2 class="">使用Map的方法</h2><p class="paragraph">示例</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    // ===============================<br>    // 创建 Map<br>    // ===============================<br>    // 不可变 Map<br>    val immutableMap = mapOf(&quot;Java&quot; to 86, &quot;Kotlin&quot; to 92, &quot;Go&quot; to 78)<br>    println(&quot;不可变 Map: $immutableMap&quot;)<br><br>    // 可变 Map<br>    val mutableMap = mutableMapOf(&quot;Java&quot; to 86, &quot;Kotlin&quot; to 92)<br>    println(&quot;可变 Map: $mutableMap&quot;)<br><br>    // ===============================<br>    // 访问 Map<br>    // ===============================<br>    println(&quot;Java 的分数: ${immutableMap[&quot;Java&quot;]}&quot;)               // 86<br>    println(&quot;Kotlin 的分数: ${immutableMap.get(&quot;Kotlin&quot;)}&quot;)      // 92<br>    println(&quot;C 的分数: ${immutableMap.getOrDefault(&quot;C&quot;, 0)}&quot;)    // 0<br>    println(&quot;Map 是否包含 Go: ${immutableMap.containsKey(&quot;Go&quot;)}&quot;) // true<br>    println(&quot;Map 是否包含值 92: ${immutableMap.containsValue(92)}&quot;) // true<br><br>    println(&quot;所有 key: ${immutableMap.keys}&quot;)       // [Java, Kotlin, Go]<br>    println(&quot;所有 value: ${immutableMap.values}&quot;)   // [86, 92, 78]<br><br>    // ===============================<br>    // 遍历 Map<br>    // ===============================<br>    println(&quot;遍历 Map:&quot;)<br>    for ((key, value) in immutableMap) {<br>        println(&quot;$key -&gt; $value&quot;)<br>    }<br><br>    immutableMap.forEach { (key, value) -&gt;<br>        println(&quot;Key: $key, Value: $value&quot;)<br>    }<br><br>    // ===============================<br>    // 查询与过滤<br>    // ===============================<br>    val filteredMap = immutableMap.filter { it.value 80 }  // value 大于 80<br>    println(&quot;过滤后的 Map: $filteredMap&quot;) // {Java=86, Kotlin=92}<br><br>    val firstEntry = immutableMap.entries.first { it.key.contains(&quot;K&quot;) }<br>    println(&quot;第一个 key 包含 K 的条目: $firstEntry&quot;) // Kotlin=92<br><br>    val lastEntry = immutableMap.entries.last { it.value &lt; 90 }<br>    println(&quot;最后一个 value 小于 90 的条目: $lastEntry&quot;) // Go=78<br><br>    // ===============================<br>    // Map 变换<br>    // ===============================<br>    val doubledValuesMap = immutableMap.mapValues { it.value * 2 }<br>    println(&quot;value 翻倍后的 Map: $doubledValuesMap&quot;) // {Java=172, Kotlin=184, Go=156}<br><br>    val upperCaseKeysMap = immutableMap.mapKeys { it.key.uppercase() }<br>    println(&quot;key 大写后的 Map: $upperCaseKeysMap&quot;) // {JAVA=86, KOTLIN=92, GO=78}<br><br><br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">operator 修饰了 plus、minus 方法，因此可使用＋、-运算符操作集合, </br> 代码示例一</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    val map1 = mapOf(&quot;Java&quot; to 86, &quot;Kotlin&quot; to 92)<br><br>// 合并另一个 Map<br>    val map2 = map1 + mapOf(&quot;Go&quot; to 78, &quot;Rust&quot; to 90)<br>    println(map2) // {Java=86, Kotlin=92, Go=78, Rust=90}<br><br>// 添加单个键值对<br>    val map3 = map1 + (&quot;Python&quot; to 100)<br>    println(map3) // {Java=86, Kotlin=92, Python=100}<br><br><br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">代码示例二</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    val map = mapOf(&quot;Java&quot; to 86, &quot;Kotlin&quot; to 92, &quot;Go&quot; to 78)<br><br>// 删除单个 key<br>    val map1 = map - &quot;Java&quot;<br>    println(map1) // {Kotlin=92, Go=78}<br><br>// 删除多个 key<br>    val map2 = map - listOf(&quot;Java&quot;, &quot;Go&quot;)<br>    println(map2) // {Kotlin=92}<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class="">遍历Map</h2><ul><li><p class="paragraph">Map 集合由多个 key-value 对组成，因此遍历 Map 集合时既可通过对 key-value 对进行遍 历，也可先遍历 key ，再通过 key 来获取对应的 value 进行遍历 。</p></li><li><p class="paragraph">Kotlin 的 Map 提供了 operator 修饰的 get()方法，因此可通过“［］”运算符根据 key 来获取 value 。</p></li><li><p class="paragraph">此外， Map 也可直接用 for-in 循环进行遍历，这时循环变量的类型是 Entry （即 key-value 对）。</br> 下面程序示范了对 Map 集合的几种遍历方式。</p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main(args: Array&lt;String&gt;) {<br>    // 创建不可变 Map 集合<br>    val map = mapOf(<br>        &quot;Java&quot; to 86,<br>        &quot;Kotlin&quot; to 92,<br>        &quot;Go&quot; to 76<br>    )<br><br>    // 1. 遍历 Map 的 key-value 对（entries）<br>    println(&quot;遍历 entries：&quot;)<br>    for (entry in map.entries) {<br>        println(&quot;${entry.key} -&gt; ${entry.value}&quot;)<br>    }<br><br>    // 2. 先遍历 Map 的 key，再通过 key 获取 value<br>    println(&quot;\n通过 keys 遍历：&quot;)<br>    for (key in map.keys) {<br>        println(&quot;$key -&gt; ${map[key]}&quot;)<br>    }<br><br>    // 3. 直接用 for-in 循环解构 Map<br>    println(&quot;\nfor-in 解构遍历：&quot;)<br>    for ((key, value) in map) {<br>        println(&quot;$key -&gt; $value&quot;)<br>    }<br><br>    // 4. 用 Lambda 表达式遍历 Map<br>    println(&quot;\nforEach 遍历：&quot;)<br>    map.forEach { (key, value) -&gt;<br>        println(&quot;$key -&gt; $value&quot;)<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class="">可变的Map</h2><p class="paragraph">除使用 mapOf()函数返回的集合是不可变集合之外， 使用 mutableMapOf()、 hashMapOf()、linkedMapOf()、 sortedMapOf()函数返回的集合都是可变的，其中后面三个函数返回的 集合类型都是明确的，依次是 HashMap 、 LinkedHashMap 、 TreeMap。 </br> 可变的 Map 为操作 key-value 对提供了如下方法。</p><ul><li><p class="paragraph">clear() 清空所有的 key-value 对。</p></li><li><p class="paragraph">put(key: K, value: V) 放入一个 key-value 对。如果原来已经存在该 key，则新的 value 会覆盖原有的 value。</p></li><li><p class="paragraph">putAll(from: Map<out K, V>) 批量放入多个 key-value 对。</p></li><li><p class="paragraph">remove(key: K) 删除指定的 key-value 对。 </br></p></li></ul><p class="paragraph">代码示例</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    // 创建可变Map，返回值是 MutableMap<br>    val mutableMap = mutableMapOf(&quot;Java&quot; to 86, &quot;Kotlin&quot; to 92, &quot;Go&quot; to 76)<br>    println(&quot;初始可变Map: $mutableMap&quot;)<br>    // 输出: {Java=86, Kotlin=92, Go=76}<br><br>    // put(): 添加或更新key-value<br>    mutableMap.put(&quot;Python&quot;, 88)  // 添加新元素<br>    mutableMap.put(&quot;Java&quot;, 90)    // 更新已有key的value<br>    println(&quot;put()操作后: $mutableMap&quot;)<br>    // 输出: {Java=90, Kotlin=92, Go=76, Python=88}<br><br>    // putAll(): 批量添加多个key-value<br>    val newMap = mapOf(&quot;C&quot; to 85, &quot;Rust&quot; to 80)<br>    mutableMap.putAll(newMap)<br>    println(&quot;putAll()操作后: $mutableMap&quot;)<br>    // 输出: {Java=90, Kotlin=92, Go=76, Python=88, C=85, Rust=80}<br><br>    // remove(): 删除指定key<br>    mutableMap.remove(&quot;Go&quot;)<br>    println(&quot;remove()操作后: $mutableMap&quot;)<br>    // 输出: {Java=90, Kotlin=92, Python=88, C=85, Rust=80}<br><br>    // clear(): 清空所有key-value<br>    mutableMap.clear()<br>    println(&quot;clear()操作后: $mutableMap&quot;)<br>    // 输出: {}<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

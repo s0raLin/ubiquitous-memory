@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>1-数组</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../index.html">
+                    Learn
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+1.0-SNAPSHOT        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":dokkaHtml/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":dokkaHtml/main"
+                                       data-filter=":dokkaHtml/main"/>
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    Learn
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="member" id="content" pageIds="Learn::第4章_集合与数组.数组//1-数组/#/PointingToDeclaration//769193423">
+  <div class="breadcrumbs"><a href="../../index.html">Learn</a><span class="delimiter">/</span><a href="index.html">第4章_集合与数组.数组</a><span class="delimiter">/</span><span class="current">1-数组</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>1-数组</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="1-数组.html"><span class="token function">1-数组</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><h2 class="">创建数组</h2><p class="paragraph">Kotlin 创建数组大致有如下两种方式。</p><ol><li><p class="paragraph">使用 arrayOf（）、 arrayOfNulls（）、 emptyArray（）工具函数。</p></li><li><p class="paragraph">使用 Array(size: Int, init: (Int) -> T）构造器 。 </br> 代码示例</p></li></ol><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    // =========================<br>    // 方式1：使用工具函数<br>    // =========================<br><br>    // 1.1 arrayOf() 创建普通数组<br>    val array1 = arrayOf(1, 2, 3, 4, 5)<br>    println(&quot;arrayOf: ${array1.joinToString()}&quot;) // 输出: 1, 2, 3, 4, 5<br><br>    // 1.2 arrayOfNulls() 创建可存放 null 的数组<br>    val array2 = arrayOfNulls&lt;String&gt;(5)<br>    println(&quot;arrayOfNulls: ${array2.joinToString()}&quot;) // 输出: null, null, null, null, null<br><br>    // 1.3 emptyArray() 创建空数组<br>    val array3 = emptyArray&lt;Int&gt;()<br>    println(&quot;emptyArray: ${array3.joinToString()}&quot;) // 输出: 空<br><br>    // =========================<br>    // 方式2：使用 Array 构造器<br>    // =========================<br><br>    // Array(size, init) 通过 lambda 初始化数组<br>    val array4 = Array(5) { i -&gt; i * i } // 0*0, 1*1, 2*2, 3*3, 4*4<br>    println(&quot;Array(size, init): ${array4.joinToString()}&quot;) // 输出: 0, 1, 4, 9, 16<br><br>    // 也可以用更简洁的 lambda<br>    val array5 = Array(5) { it + 1 } // it 为索引<br>    println(&quot;Array with index: ${array5.joinToString()}&quot;) // 输出: 1, 2, 3, 4, 5<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">代码解释：</p><p class="paragraph">使用 arrayOf() 函数</p><ul><li><p class="paragraph">不需要显式指定数组长度，但需依次列出每个数组元素。</p></li><li><p class="paragraph">相当于 Java 中的静态初始化数组。</p></li><li><p class="paragraph">由于程序已经提供了每个元素，Kotlin 可以自动推断数组元素类型，因此无需在 arrayOf() 上指定泛型。 使用 arrayOfNulls<T>(size) 函数</p></li><li><p class="paragraph">需要显式指定数组长度，所有元素初始值为 null。</p></li><li><p class="paragraph">相当于 Java 中的动态初始化数组。</p></li><li><p class="paragraph">由于元素初始值是 null，Kotlin 无法推断元素类型，因此必须在函数上指定泛型 T。 使用 emptyArray<T>() 函数</p></li><li><p class="paragraph">创建一个长度为 0 的空数组。</p></li><li><p class="paragraph">因为没有元素，所以必须显式指定数组元素类型的泛型。 使用 Array(size: Int, init: (Int) -> T) 构造器</p></li><li><p class="paragraph">需要显式指定数组长度。</p></li><li><p class="paragraph">可通过 Lambda 表达式动态生成每个元素的值（Java 原生数组不支持这种方式）。</p></li></ul><p class="paragraph">由于 Array<T> 要求元素必须是引用类型，当向其中存入基本类型的值时，Kotlin 会自动将这些基本类型装箱为对应的包装类实例，然后再存入数组。</br> 为避免频繁装箱带来的性能开销，Kotlin 提供了专门的数组类型来对应 Java 的基本类型数组：</p><ul><li><p class="paragraph">ByteArray → byte[]</p></li><li><p class="paragraph">ShortArray → short[]</p></li><li><p class="paragraph">IntArray → int[]</p></li><li><p class="paragraph">LongArray → long[]</p></li><li><p class="paragraph">CharArray → char[]</p></li><li><p class="paragraph">FloatArray → float[]</p></li><li><p class="paragraph">DoubleArray → double[]</p></li><li><p class="paragraph">BooleanArray → boolean[] 这些专用数组可直接存储基本类型值，避免了装箱操作，提高了性能。</br></p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    // 使用 Array&lt;T&gt; 存储基本类型，会自动装箱为 Integer（Int 的包装类）<br>    val numbers: Array&lt;Int&gt; = arrayOf(1, 2, 3)<br>    println(&quot;Array&lt;Int&gt; 内容: ${numbers.joinToString()}&quot;)<br><br>    // 使用 IntArray，直接存储基本类型，性能更高<br>    val intNumbers: IntArray = intArrayOf(1, 2, 3)<br>    println(&quot;IntArray 内容: ${intNumbers.joinToString()}&quot;)<br><br>    // 其他基本类型数组示例<br>    val doubleNumbers: DoubleArray = doubleArrayOf(1.1, 2.2, 3.3)<br>    println(&quot;DoubleArray 内容: ${doubleNumbers.joinToString()}&quot;)<br><br>    val booleanFlags: BooleanArray = booleanArrayOf(true, false, true)<br>    println(&quot;BooleanArray 内容: ${booleanFlags.joinToString()}&quot;)<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">使用数组 在 Kotlin 中，访问数组元素主要包括取值和赋值操作。 访问方式是通过在数组变量后加方括号 <code class="lang-kotlin">[]</code>，其中方括号内写索引值。</p><blockquote class="quotation"><p class="paragraph">注意：Kotlin 中的方括号操作符本质上是调用 <code class="lang-kotlin">get(index)</code> 和 <code class="lang-kotlin">set(index, value)</code> 方法。 <code class="lang-kotlin">arr[i]</code> 实际上调用的是 <code class="lang-kotlin">arr.get(i)</code> <code class="lang-kotlin">arr[i] = value</code> 实际上调用的是 <code class="lang-kotlin">arr.set(i, value)</code></p></blockquote><ul><li><p class="paragraph">获取到数组元素后，就可以像使用普通变量一样对其进行操作。 数组元素的类型与数组声明时指定的类型一致。</p></li><li><p class="paragraph">Kotlin 的数组索引从 0 开始，第一个元素索引为 0，最后一个元素索引为 数组长度 - 1。</br> 示例代码</p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    val numbers = arrayOf(1, 2, 3, 4, 5)<br><br>    // 取值<br>    println(numbers.get(0)) // 输出 1<br>    println(numbers[0])  // 输出 1<br><br>    // 赋值<br>    numbers[1] = 20<br>    println(numbers[1])  // 输出 20<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><ul><li><p class="paragraph">上面 4 行粗体字代码分别示范了访问数组元素和修改数组元素。访问、修改数组元素时既 可使用 ［index］ 的方式来实现，也可使用 get(index）、 set( index, value）的方式来实现。这两种方式 的本质是一样的，而且编译器经过编译优化之后，还是会转换成根据数组的内存地址来访问数 组元素，因此性能不会有任何损失。</p></li><li><p class="paragraph">访问数组元素时，如果指定的索引值小于 0，或者大于等于数组长度，编译阶段不会报错，但运行时会抛出异常</p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">java.lang.ArrayIndexOutOfBoundsException: N //N就是我们尝试访问的数组索引</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">所有的数组都提供了 一个 size 属性，通过这个属性可以访问到数组的长度，一旦获得了 数组的长度，就可以通过循环来遍历该数组的每个数组元素。</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    val ints = intArrayOf(1, 2, 3)<br>    println(&quot;${ints.size}&quot;) //3<br>    for(i in 0 until ints.size) {<br>        println(ints[i])<br>    } //1\n2\n3\n<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class="">使用for-in遍历数组</h2><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    val ints = intArrayOf(1, 2, 3, 4, 5)<br>    for(int in ints) {<br>        println(int)<br>    }//1\n2\n3\n4\n5\n<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">注意事项：</p><ul><li><p class="paragraph">使用for-in 循环来遍历数组元素或集合元素时，不允许对循环变量进行赋值 。</p></li><li><p class="paragraph">对数组使用 for-in 循环依然会被编译成使用基于索引的循环，井不会创建迭代器进行遍历， 因此使用 for-in 循环遍历数组依然具有很好的性能 。</br></p></li></ul><h2 class="">使用数组索引</h2><p class="paragraph">前面使用索引遍历数组时还使用了 O until ints.size 这种方式来创建区间，其实完全没这 个必要，因为 Kotlin 的数组还提供了 一个 indices 属性，该属性即可返回数组的索引区间 。</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">for(index in ints.indices) {<br>    println(ints[index])<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">这种通过索引区间遍历的实现具有更好的性能，因此 Kotlin 将会在底层将其编译成根据 内存地址来访问数组元素，因此不需要额外创建区间对象。 </br></br> 此外，程序还可使用 in、!in 来检查某个索引是否位于数组的索引区间内 </br> 通过lastIndex可以访问数组最后一位元素，相当于size-1</p><p class="paragraph"></br></br> 在需要同时获取数组的索引和值时，可以使用数组的 withIndex() 方法。 该方法会返回一个 Iterable<IndexedValue<T>> 对象，其中每个元素都包含 index 和 value 两个属性。 通过 for-in 遍历时，即可直接访问数组的索引和值。</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    val arr = arrayOf(&quot;Java&quot;, &quot;Kotlin&quot;, &quot;Go&quot;)<br><br>    // 使用 withIndex() 同时访问索引和值<br>    for ((index, value) in arr.withIndex()) {<br>        println(&quot;索引: $index, 元素: $value&quot;)<br>    }<br>}<br>/*<br>输出：<br>索引: 0, 元素: Java<br>索引: 1, 元素: Kotlin<br>索引: 2, 元素: Go<br>*/</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class="">数组的常用方法</h2><p class="paragraph">请参考Kotlin官网</p></div></div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

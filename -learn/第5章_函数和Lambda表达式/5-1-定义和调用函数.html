@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>5-1-定义和调用函数</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../index.html">
+                    Learn
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+1.0-SNAPSHOT        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":dokkaHtml/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":dokkaHtml/main"
+                                       data-filter=":dokkaHtml/main"/>
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    Learn
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="member" id="content" pageIds="Learn::第5章_函数和Lambda表达式//5-1-定义和调用函数/#/PointingToDeclaration//769193423">
+  <div class="breadcrumbs"><a href="../../index.html">Learn</a><span class="delimiter">/</span><a href="index.html">第5章_函数和Lambda表达式</a><span class="delimiter">/</span><span class="current">5-1-定义和调用函数</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>5-1-定义和调用函数</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="5-1-定义和调用函数.html"><span class="token function">5-1-定义和调用函数</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><h2 class="">定义和调用函数</h2><p class="paragraph">Kotlin是强类型编程语言，因此使用函数前需定义</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun 函数名(形参列表)［:返回值类型］｛<br>    //需要重用的代码块<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">返回值类型一定要与 return 的类型匹配，如果一个函数没有返回值，则返回Unit，返回值声明部分可以省略 多个形参之间使用','隔开，并且必须指定类型</p><h3 class="">Kotlin声明函数需要使用fun关键字。</h3><h3 class="">函数名</h3><ul><li><p class="paragraph">从语法角度看，函数名只需是合法的标识符；</p></li><li><p class="paragraph">从可读性角度看，函数名应由一个或多个有意义的单词组成，采用小驼峰命名法：</p></li><ul><li><p class="paragraph">第一个单词首字母小写;</p></li><li><p class="paragraph">后续单词首字母大写;</p></li><li><p class="paragraph">其余字母小写;</p></li><li><p class="paragraph">单词之间不使用分隔符。</p></li></ul></ul><h3 class="">返回值类型</h3><p class="paragraph">在 Kotlin 中，函数的返回值类型可以是 任意合法的数据类型。</p><ul><li><p class="paragraph">如果在函数声明中指定了返回值类型，那么函数体中必须包含一条有效的 return 语句，并且 return 返回的变量或表达式的类型必须与声明的返回值类型一致。</p></li><li><p class="paragraph">如果函数不需要返回值，有两种写法：</p></li><ol><li><p class="paragraph">省略返回值类型（默认返回 Unit）。</p></li><li><p class="paragraph">显式声明返回 Unit，其中 Unit 表示“无返回值”。</p></li></ol></ul><h3 class="">形参列表</h3><p class="paragraph">形参列表用于定义函数能够接收的参数。它由零个或多个“形参名: 参数类型”组成，多个参数之间用英文逗号分隔，形参名与参数类型之间用英文冒号分隔。</br> 一旦在函数定义中指定了形参列表，那么调用该函数时就必须传入对应的实参值 —— 谁调用函数，谁负责为形参提供数值。</br></p><p class="paragraph">函数体内多条可执行语句之间有严格的执行顺序，排在函数体前面的代码先执行。</br></p><p class="paragraph">示例</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">// 定义一个函数，计算矩形的面积<br>fun calculateArea(length: Int, width: Int): Int {<br>    // 这里必须有 return，且返回 Int 类型<br>    return length * width<br>}<br><br>// 定义一个函数，打印欢迎信息（无返回值，省略返回值类型）<br>fun printWelcomeMessage(name: String) {<br>    println(&quot;欢迎你，$name!&quot;)<br>}<br><br>// 定义一个函数，显式声明返回 Unit<br>fun logInfo(message: String): Unit {<br>    println(&quot;[INFO] $message&quot;)<br>}<br><br>fun main() {<br>    // 调用有返回值的函数<br>    val area = calculateArea(10, 5)<br>    println(&quot;矩形面积是: $area&quot;)<br><br>    // 调用无返回值的函数<br>    printWelcomeMessage(&quot;小明&quot;)<br>    logInfo(&quot;程序运行正常&quot;)<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class="">单表达式</h2><p class="paragraph">如果函数体只有一个表达式，此时<code class="lang-kotlin">{}</code>可以省略并在=后指定函数体 因为可以类型推断因此返回值的定义可以省略</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">// 普通写法<br>fun square(x: Int): Int {<br>    return x * x<br>}<br><br>// 单表达式写法<br>fun square(x: Int) = x * x<br><br>// 类型推断：返回值类型省略<br>fun greet(name: String) = &quot;Hello, $name!&quot;<br><br>fun main() {<br>    println(square(5))       // 输出 25<br>    println(greet(&quot;Kotlin&quot;)) // 输出 Hello, Kotlin!<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class="">函数形参</h2><p class="paragraph">Kotlin 函数的参数名不是无意义的, 允许调用函数时通过名字来传入参数值。</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun greet(name: String, age: Int, city: String) {<br>    println(&quot;大家好，我是 $name，今年 $age 岁，来自 $city。&quot;)<br>}<br><br>fun main() {<br>    // 位置参数调用（必须按定义顺序传入）<br>    greet(&quot;小明&quot;, 20, &quot;北京&quot;)<br><br>    // 命名参数调用（可打乱顺序，提升可读性）<br>    greet(age = 22, city = &quot;上海&quot;, name = &quot;小红&quot;)<br><br>    // 部分使用命名参数<br>    greet(&quot;小刚&quot;, city = &quot;广州&quot;, age = 25)<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">##形参默认值 在某些情况下，程序需要在定义函数时为一个或多个形参指定默认值一一这样调用函数时 就可以省略该形参，而直接使用该形参的默认值。</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">// 定义函数时为参数指定默认值<br>fun greet(name: String = &quot;陌生人&quot;, message: String = &quot;你好&quot;) {<br>    println(&quot;$message，$name!&quot;)<br>}<br><br>fun main() {<br>    greet()                          // 使用所有默认值 -&gt; 输出: 你好，陌生人!<br>    greet(&quot;小明&quot;)                     // 只传入 name -&gt; 输出: 你好，小明!<br>    greet(message = &quot;欢迎&quot;)            // 只传入 message -&gt; 输出: 欢迎，陌生人!<br>    greet(&quot;小红&quot;, &quot;早上好&quot;)            // 覆盖所有参数 -&gt; 输出: 早上好，小红!<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class="">可变长度的形参</h2><p class="paragraph">Kotlin允许为函数指定数量不确定的形参，需要在形参前加 vararg 修饰，多个形参值被当成数组传入</br></p><p class="paragraph">举个例子</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">// 定义一个函数，接收任意数量的整数，并计算它们的和<br>fun sumAll(vararg numbers: Int): Int {<br>    var sum = 0<br>    for (num in numbers) {<br>        sum += num<br>    }<br>    return sum<br>}<br><br>fun main() {<br>    val result1 = sumAll(1, 2, 3)        // 1 + 2 + 3 = 6<br>    val result2 = sumAll(10, 20, 30, 40) // 10 + 20 + 30 + 40 = 100<br><br>    println(result1) // 输出: 6<br>    println(result2) // 输出: 100<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">代码解释</p><ul><li><p class="paragraph">使用 vararg numbers: Int 表示 numbers 可以接受任意数量的 Int 参数。</p></li><li><p class="paragraph">在函数内部，numbers 实际上是一个 IntArray。</p></li><li><p class="paragraph">调用函数时，可以传入 0 个或多个参数，也可以直接传入一个数组并用 <code class="lang-kotlin">*</code> 展开：</p></li></ul></div></div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

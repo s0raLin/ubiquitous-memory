@@ -2,7 +2,7 @@
 <html class="no-js">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-    <title>2-7-逻辑运算符</title>
+    <title>5-0-函数简介</title>
     <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
     <script>var pathToRoot = "../../";</script>
     <script>document.documentElement.classList.replace("no-js","js");</script>
@@ -104,12 +104,12 @@
                 </div>
             </div>
             <div id="main">
-<div class="main-content" data-page-type="member" id="content" pageIds="Learn::第2章_运算符和表达式//2-7-逻辑运算符/#/PointingToDeclaration//769193423">
-  <div class="breadcrumbs"><a href="../../index.html">Learn</a><span class="delimiter">/</span><a href="index.html">第2章_运算符和表达式</a><span class="delimiter">/</span><span class="current">2-7-逻辑运算符</span></div>
+<div class="main-content" data-page-type="member" id="content" pageIds="Learn::第5章_函数和Lambda表达式//5-0-函数简介/#/PointingToDeclaration//769193423">
+  <div class="breadcrumbs"><a href="../../index.html">Learn</a><span class="delimiter">/</span><a href="index.html">第5章_函数和Lambda表达式</a><span class="delimiter">/</span><span class="current">5-0-函数简介</span></div>
   <div class="cover ">
-    <h1 class="cover"><span><span>2-7-逻辑运算符</span></span></h1>
+    <h1 class="cover"><span><span>5-0-函数简介</span></span></h1>
   </div>
-  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="2-7-逻辑运算符.html"><span class="token function">2-7-逻辑运算符</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><h2 class="">相等与不相等</h2><table><thead><tr><th>运算符</th><th>对应的方法</th></tr></thead><tbody><tr><td>a==b</td><td>a?.equals(b) ?: (b === null)</td></tr><tr><td>a!=b</td><td>!(a?.equals(b) ?: (b === null))</td></tr></tbody></table><p class="paragraph">可以看出<code class="lang-kotlin">==</code>与<code class="lang-kotlin">equals()</code>是等义的，只不过==比较是空安全的</p><h2 class="">比较</h2><table><thead><tr><th>运算符</th><th>对应的方法</th></tr></thead><tbody><tr><td><code class="org.jetbrains.dokka.pages.commenttable@23b8d2a1 lang-kotlin">a&gt;b</code></td><td>a.compareTo(b) 0</td></tr><tr><td><code class="org.jetbrains.dokka.pages.commenttable@23b8d2a1 lang-kotlin">a&lt;b</code></td><td>a.compareTo(b) < 0</td></tr><tr><td><code class="org.jetbrains.dokka.pages.commenttable@23b8d2a1 lang-kotlin">a &gt;= b</code></td><td>a.compareTo(b) >= 0</td></tr><tr><td><code class="org.jetbrains.dokka.pages.commenttable@23b8d2a1 lang-kotlin">a &lt;= b</code></td><td>a.compareTo(b) <= 0</td></tr></tbody></table><p class="paragraph">比较运算符其实就是由 compareTo（）方法来实现的，而该方法是 Comparable 接口中定义的方法 注意：String比较的规则是按照首字母,如果首字母相同，再比较第二个字母，以此类推</p></div></div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="5-0-函数简介.html"><span class="token function">5-0-函数简介</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><ul><li><p class="paragraph">函数是代码复用的重要手段。程序通过将一段代码定义成函数，并为该函数指定 一个 函数名，这样即可在需要的时候多次调用这段代码。</p></li><li><p class="paragraph">Kotlin 对 Java 的纯粹面向对象进行了弥补，增加了函数式编程的支持</p></li><li><p class="paragraph">Lambda 表达式可作为表达式、函数参数或函数返回值，可以让程序更简洁</p></li></ul></div></div>
 </div>
     <div class="footer">
         <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>

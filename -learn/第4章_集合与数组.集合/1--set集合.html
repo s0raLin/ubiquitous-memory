@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>1-Set集合</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../index.html">
+                    Learn
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+1.0-SNAPSHOT        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":dokkaHtml/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":dokkaHtml/main"
+                                       data-filter=":dokkaHtml/main"/>
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    Learn
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="member" id="content" pageIds="Learn::第4章_集合与数组.集合//1-Set集合/#/PointingToDeclaration//769193423">
+  <div class="breadcrumbs"><a href="../../index.html">Learn</a><span class="delimiter">/</span><a href="index.html">第4章_集合与数组.集合</a><span class="delimiter">/</span><span class="current">1-Set集合</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>1-Set集合</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="1--set集合.html"><span class="token function">1-Set集合</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><h2 class="">添加Set集合</h2><ul><li><p class="paragraph">Kotlin 的 Collection 集合和 Set 集合的功能基本相同， Set 集合只是为Collection 集合增加了额外的限制：集合元素不允许重复</p></li><li><p class="paragraph">实际上 Kotlin 并没有真正为只币4 平台实现任何 Set 集合类（只是通过别名借用了 Java 集合框架的类），因此不推荐通过构造器创建 Set 集合，而是推荐使用 Kotlin 提供的工具函数来创建 Set 集合 。</br> Kotlin 提供了如下函数来创建 Set 集合。</p></li><li><p class="paragraph"><code class="lang-kotlin">setOf()</code>: 返回一个不可变集合。该函数可以接受0或多个参数，作为集合的元素</p></li><li><p class="paragraph"><code class="lang-kotlin">multableSetOf()</code>: 返回一个可变集合。该函数可以接受0或多个参数，作为集合的元素 </br> 注意事项：在Kotlin1.1中，上面两种方法实际返回的是LinkedHashSet实例，但从目前的实现来看，上面两个方法返回的 Set 集合都会记住元素的添加顺序一一这是LinkedHashSet 的特征所决定的 。</p></li><li><p class="paragraph"><code class="lang-kotlin">hashSetOf()</code>: 该函数返回可变的 HashSet 集合。该函数可接受 0 个或多个参数，这些参数将作为集合的元素。</p></li><li><p class="paragraph"><code class="lang-kotlin">linkedSetOf()</code>: 该函数返回可变的 LinkedHashSet 集合。该函数可接受 0 个或多个参数，这些参数将作为集合的元素。</p></li><li><p class="paragraph"><code class="lang-kotlin">sortedSetOf()</code>: ：该函数返回可变的 TreeSet 集合 。该函数可接受 0 个或多个参数，这些参数将作为集合 的元素 。</p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main(args: Array&lt;String&gt;) {<br>    // 创建不可变集合，返回值是 Set<br>    val set = setOf(&quot;Java&quot;, &quot;Kotlin&quot;, &quot;Go&quot;)<br>    println(set) // 集合元素按添加顺序排列（实际上底层是 LinkedHashSet）<br><br>    // 创建可变集合，返回值是 MutableSet<br>    val mutableSet = mutableSetOf(&quot;Java&quot;, &quot;Kotlin&quot;, &quot;Go&quot;)<br>    println(mutableSet) // 集合元素按添加顺序排列<br>    println(&quot;setOf 的返回对象的实际类型：${set.javaClass}&quot;)<br>    println(&quot;mutableSetOf 的返回对象的实际类型：${mutableSet.javaClass}&quot;)<br><br>    // 创建 HashSet 集合<br>    val hashSet = hashSetOf(&quot;Java&quot;, &quot;Kotlin&quot;, &quot;Go&quot;)<br>    println(hashSet) // 不保证元素的顺序<br><br>    // 创建 LinkedHashSet 集合<br>    val linkedHashSet = linkedSetOf(&quot;Java&quot;, &quot;Kotlin&quot;, &quot;Go&quot;)<br>    println(linkedHashSet) // 集合元素按添加顺序排列<br><br>    // 创建 TreeSet 集合（需要通过 sortedSetOf）<br>    val treeSet = sortedSetOf(&quot;Java&quot;, &quot;Kotlin&quot;, &quot;Go&quot;)<br>    println(treeSet) // 集合元素按字典顺序（由小到大）排列<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">从上面的运行结果可以看出， Kotlin 的 4 个工具函数创建的 Set 集合都能维护元素的顺序，</p><ul><li><p class="paragraph">其中 setOf()、mutableSetOf()、linkedSetOf()创建的 Set 集合能维护元素的添加顺序(这是LinkedHashSet 的特征所决定的)</p></li><li><p class="paragraph">sortedSetOf()函数创建的 Set 集合会按照大小对元素排序。</p></li><li><p class="paragraph">如果真正希望 Set 集合不维护元素顺序，只有通过 hashSetOf（）函数创建 Set 集合才行 。</p></li></ul><h2 class="">使用Set方法</h2><p class="paragraph">除 Java 原生 Set 的各种方法之外， KotLin 的 Set 还扩展了大量方法，在 Set 集合中有很多方法与 Array 的方法功能相似</p><ol><li><p class="paragraph">元素判断</p></li></ol><ul><li><p class="paragraph">in / !in：判断元素是否存在于集合中（底层用 contains）</p></li></ul><ol><li><p class="paragraph">条件检查</p></li></ol><ul><li><p class="paragraph">all {}：是否所有元素都满足条件。</p></li><li><p class="paragraph">any {}：是否有任一元素满足条件。</p></li><li><p class="paragraph">none {}：是否所有元素都不满足条件。</p></li></ul><ol><li><p class="paragraph">查找元素</p></li></ol><ul><li><p class="paragraph">find {}：查找第一个满足条件的元素（找不到返回 null）。</p></li><li><p class="paragraph">first {}：从前往后找第一个满足条件的元素（找不到抛异常）。</p></li><li><p class="paragraph">last {}：从后往前找第一个满足条件的元素（找不到抛异常）。</p></li><li><p class="paragraph">firstOrNull {}：找第一个满足条件的元素（找不到返回 null）。</p></li></ul><ol><li><p class="paragraph">集合运算</p></li></ol><ul><li><p class="paragraph">intersect()：交集。</p></li><li><p class="paragraph">union()：并集。</p></li><li><p class="paragraph">+：相加，相当于并集。</p></li><li><p class="paragraph">-：相减，去掉公共元素。</p></li></ul><ol><li><p class="paragraph">集合转换</p></li></ol><ul><li><p class="paragraph">map {}：映射为新值。</p></li><li><p class="paragraph">associateBy {}：转换为 Map，key 由 Lambda 生成，value 是原集合元素。</p></li><li><p class="paragraph">filter {}：过滤。</p></li><li><p class="paragraph">drop(n)：丢掉前 n 个元素。</p></li><li><p class="paragraph">reversed()：反转（返回 List）。</p></li><li><p class="paragraph">distinctBy {}：根据条件去重。</p></li><li><p class="paragraph">flatMap {}：展开集合，例如把字符串集合展开成字符集合。</p></li></ul><ol><li><p class="paragraph">聚合运算</p></li></ol><ul><li><p class="paragraph">fold(initial) { acc, e -> ... }：迭代累计（从初始值开始累加）。</p></li><li><p class="paragraph">count {}：统计满足条件的元素个数。</p></li><li><p class="paragraph">max() / min()：取最大/最小值（字典序比较）。</p></li></ul><ol><li><p class="paragraph">分组</p></li></ol><ul><li><p class="paragraph">groupBy {}：根据条件分组，返回 Map<key, List>。</p></li></ul><h3 class="">代码示例</h3><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main(args: Array&lt;String&gt;) {<br>    // 创建不可变集合，返回值是 Set<br>    val set = setOf(&quot;Java&quot;, &quot;Kotlin&quot;, &quot;Go&quot;)<br><br>    // 判断是否所有元素的长度都大于 4<br>    println(set.all { it.length 4 })   // 输出 false<br><br>    // 判断是否任一元素的长度都大于 4    println(set.any { it.length 4 })   // 输出 true<br><br>    //判断是否任意元素的长度都不大于 4    println(set.none { it.length 4 }) //输出 false<br><br>    // 以 Lambda 表达式的值为 key ，集合元素为 value，组成 Map 集合    val map = set.associateBy { &quot;《$it 核心指南》&quot; }<br>    println(map)<br>    // 输出：<br>    // {《Java 核心指南》=Java, 《Kotlin 指南》=Kotlin, 《Go 核心指南》=Go}<br>    // in、!in 运算符（底层用 contains）    println(&quot;Java&quot; in set)    // 输出 true<br>    println(&quot;C++&quot; !in set)    // 输出 true<br><br>    // 返回删除 Set 集合前两个元素后的集合    val droppedList = set.drop(2)<br>    println(droppedList)      // 输出 [Go]<br><br>    // 对 Set 集合元素进行过滤：要求集合元素包含 &quot;li&quot;    val filteredList = set.filter { &quot;li&quot; in it }<br>    println(filteredList)     // 输出 [Kotlin]<br><br>    // 查找 Set 集合中第一个包含 &quot;li&quot; 的元素    val foundStr1 = set.find { &quot;li&quot; in it }<br>    println(foundStr1)        // 输出 Kotlin<br><br>    // 查找 Set 集合中第一个包含 &quot;gang&quot; 的元素    val foundStr2 = set.find { &quot;gang&quot; in it }<br>    println(foundStr2)        // 输出 null<br><br>    // 将 Set 集合中的所有字符串拼接在一起    val foldedList = set.fold(&quot;&quot;) { acc, e -&gt; acc + e }<br>    println(foldedList)       // 输出 JavaKotlinGo<br><br>    // 查找某个元素的出现位置    println(set.indexOf(&quot;Go&quot;)) // 输出 2<br><br>    // 将每个集合元素映射成新值，返回所有新值组成的 List    val mappedList = set.map { &quot;《疯狂 $it 讲义》&quot; }<br>    println(mappedList)<br>    // 输出：<br>    // [《疯狂 Java 讲义》, 《疯狂 Kotlin 讲义》, 《疯狂 Go 讲义》]<br>    // 获取最大值（字典序比较）    println(set.max())        // 输出 Kotlin<br><br>    // 获取最小值（字典序比较）    println(set.min())        // 输出 Go<br><br>    // 反转集合顺序（转 List 再反转）    val reversedList = set.reversed()<br>    println(reversedList)     // 输出 [Go, Kotlin, Java]<br><br>    // 定义另一个集合    val bSet = setOf(&quot;Lua&quot;, &quot;Erlang&quot;, &quot;Kotlin&quot;)<br><br>    // 计算两个集合的交集<br>    println(set intersect bSet)  // 输出 [Kotlin]<br><br>    // 计算两个集合的并集    println(set union bSet)      // 输出 [Java, Kotlin, Go, Lua, Erlang]<br><br>    // 集合相加，相当于并集    println(set + bSet)          // 输出 [Java, Kotlin, Go, Lua, Erlang]<br><br>    // 集合相减，减去公共的元素    println(set - bSet)          // 输出 [Java, Go]<br><br><br><br>    val langs = setOf(<br>        &quot;Java&quot;, &quot;Kotlin&quot;, &quot;Rust&quot;, &quot;Go&quot;,<br>        &quot;JavaScript&quot;, &quot;TypeScript&quot;, &quot;Python&quot;, &quot;C&quot;, &quot;C++&quot;<br>    )<br>    // 从集合的末尾开始往前找，找到最后一个满足条件的元素<br>    val last = langs.last { &quot;C&quot; in it }<br>    println(last)<br><br>    // 从集合开头往后找，找到第一个满足条件的元素。<br>    val first = langs.first { &quot;li&quot; in it }<br>    println(first)<br><br><br>    // 统计所有语言名称长度 4 的数量<br>    val count = langs.count { it.length 4 }<br>    println(&quot;长度大于 4 的语言有：$count 个&quot;) // 输出 5<br><br>    // 按照名称长度进行分组    val grouped = langs.groupBy { it.length }<br>    println(&quot;按长度分组：$grouped&quot;)<br>    // 可能输出：{4=[Java, Rust], 6=[Kotlin, Python], 2=[Go, C], 3=[C++] ...}<br><br>    // 找出第一个以 &quot;J&quot; 开头的语言    val startsWithJ = langs.firstOrNull { it.startsWith(&quot;J&quot;) }<br>    println(&quot;第一个以 J 开头的语言：$startsWithJ&quot;) // 输出 Java<br><br>    // 去重：以首字母为 key 去重    val distinct = langs.distinctBy { it.first() }<br>    println(&quot;按首字母去重后的集合：$distinct&quot;)<br>    // 输出：[Java, Kotlin, Rust, Go, Python, C]<br><br>    // flatMap 展开：每个字符串拆成字符    val chars = langs.flatMap { it.toList() }<br>    println(&quot;展开成字符列表：${chars.take(20)}...&quot;) // 输出前 20 个字符<br><br>    println()<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">上面程序中后两行粗体字代码使用了+、-运算符对集合进行操作。这是由于 Set 集合提供 了 operator 修饰的 plus 、 minus 方法，因此可使用+、-运算符操作集合。</br></p><p class="paragraph">上面程序中的代码使用了 intersect 、 union 运算符来操作 Set 集合， Kotlin 规定以 infix 修饰的方法，能以运算符的方式进行调用。</p><h2 class="">遍历Set</h2><h3 class="">一、for-in遍历</h3><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    // 创建一个不可变集合<br>    val langs = setOf(&quot;Java&quot;, &quot;Kotlin&quot;, &quot;Rust&quot;, &quot;Go&quot;, &quot;Python&quot;)<br><br>    // 使用 for-in 遍历集合<br>    for (lang in langs) {<br>        println(&quot;编程语言: $lang&quot;)<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph"></br>使用 for-in 循环遍历 Set 元素时无须获得 Set 元素的个数，也无 须根据索引来访问 Set 元素， for-in 循环自动迭代 Set 的 每个元素，当每个元素都被送代一 次 后， for-in 循环自动结束 。</p><h3 class="">forEach()遍历</h3><p class="paragraph">由于 Set 集合继承了 Iterable ，因此可使用该接口中定义的 forEach（）方法来遍历集合。</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    // 创建一个不可变Set集合<br>    val langs = setOf(&quot;Java&quot;, &quot;Kotlin&quot;, &quot;Rust&quot;, &quot;Go&quot;, &quot;Python&quot;)<br><br>    // 使用 forEach 方法来遍历 Set 集合<br>    langs.forEach { println(it) }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h3 class="">遍历Set集合的索引</h3><p class="paragraph">由于 setOf()方法返回的 Set 集合是有序的，因此程序 可以通过索引来遍历 Set 集合， Set 集合提供了 indices 方法返回其索引的区间</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    //创建一个不可变的Set集合<br>    val langs = setOf(&quot;Java&quot;, &quot;Kotlin&quot;, &quot;Rust&quot;, &quot;Go&quot;, &quot;Python&quot;)<br>    //遍历Set集合的索引<br>    for(index in langs.indices) {<br>        //根据索引遍历Set集合<br>        println(langs.elementAt(index))<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class="">可变Set</h2><p class="paragraph">使用 mutableSetOf()、 hashSetOf()、 linkedSetOf()、 sortedSetOf()函数返回的集合都是可变的，其中后面三个函数返回的集合类型都 是明确的，依次是 HashSet、LinkedHashSet、TreeSet 。</p><h3 class="">添加元素</h3><ul><li><p class="paragraph">add(element: E): 每调用一次方法，就向集合添加一个元素element</p></li><li><p class="paragraph">addAll(elements: Collection<E>): 批量添加多个元素 </br> 示例</p></li></ul><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    val language = mutableSetOf(&quot;Swift&quot;)<br>    //添加一个元素<br>    language.add(&quot;Java&quot;)<br>    language.add(&quot;Go&quot;)<br><br>    println(language)<br>    println(language.count())<br>    // [&quot;Lua&quot;, &quot;Go&quot;, &quot;Swift&quot;]<br>    // 3<br><br>    language.addAll(setOf(&quot;Kotlin&quot;,&quot;Python&quot;,&quot;JS&quot;))<br><br>    println(language)<br>    println(language.count())<br>    // [Swift, Java, Go, Kotlin, Python, JS]<br>    // 6<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h3 class="">删除元素</h3><ul><li><p class="paragraph">remove(element: E): 删除指定元素，删除成功则返回 true</p></li><li><p class="paragraph">removeAll(elements: Collection<E>)：批量删除 Set 集合中的多个元素。</p></li><li><p class="paragraph">retainAll(elements: Collection<E>): 只保留 Set 集合中与 elements 集合共有的元素。</p></li><li><p class="paragraph">clear(): 清空集合。</br></p></li></ul><p class="paragraph">示例</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    // 创建可变集合<br>    val languages = mutableSetOf(&quot;Kotlin&quot;, &quot;OC&quot;, &quot;PHP&quot;, &quot;Perl&quot;, &quot;Ruby&quot;, &quot;Go&quot;)<br><br>    // 删除单个元素<br>    languages.remove(&quot;PHP&quot;)<br>    languages.remove(&quot;Perl&quot;)<br>    println(languages)<br>    // 输出示例: [Kotlin, OC, Ruby, Go]<br><br>    // 批量删除多个元素<br>    languages.removeAll(setOf(&quot;Ruby&quot;, &quot;Go&quot;))<br>    println(languages)<br>    // 输出示例: [Kotlin, OC]<br><br>    //仅保留与elements匹配的元素<br>    languages.retainAll(setOf(&quot;Kotlin&quot;))<br>    println(languages)<br>    // 输出示例: [Kotlin]<br><br>    // 清空集合<br>    languages.clear()<br>    println(languages.count())<br>    // 输出: 0<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Set 和 MutableSet 都包含一个 iterator() 的方法，但</p><ul><li><p class="paragraph">普通 Set 的 iterator() 方法返回的是 Iterator 对象，该 Iterator 对象只有 hasNext() 和 next() 两个方法;</p></li><li><p class="paragraph">而 MutableSet 的 iterator() 方法 返回的是 MutableIterator 对象，该对象除 hasNext() 和 next() 两个方法之外，还提供了一个 remove() 方法，该方法可用于在遍历时删除元素。</br></p></li></ul><p class="paragraph">示例</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun main() {<br>    val set = mutableSetOf(&quot;aa&quot;, &quot;eyz&quot;, &quot;abc&quot;)<br>    val it = set.iterator()  // 返回 MutableIterator<br><br>    while (it.hasNext()) {<br>        val e = it.next()<br>        println(e)<br>        // 遍历时删除元素<br>        if (e.length &lt; 3) {<br>            it.remove()<br>            println(set) // 输出当前集合状态<br>        }<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

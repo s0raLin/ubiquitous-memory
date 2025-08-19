@@ -2,7 +2,7 @@
 <html class="no-js">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-    <title>2-7-逻辑运算符</title>
+    <title>第4章_集合与数组.数组</title>
     <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
     <script>var pathToRoot = "../../";</script>
     <script>document.documentElement.classList.replace("no-js","js");</script>
@@ -104,12 +104,50 @@
                 </div>
             </div>
             <div id="main">
-<div class="main-content" data-page-type="member" id="content" pageIds="Learn::第2章_运算符和表达式//2-7-逻辑运算符/#/PointingToDeclaration//769193423">
-  <div class="breadcrumbs"><a href="../../index.html">Learn</a><span class="delimiter">/</span><a href="index.html">第2章_运算符和表达式</a><span class="delimiter">/</span><span class="current">2-7-逻辑运算符</span></div>
+<div class="main-content" data-page-type="package" id="content" pageIds="Learn::第4章_集合与数组.数组////PointingToDeclaration//769193423">
+  <div class="breadcrumbs"><a href="../../index.html">Learn</a><span class="delimiter">/</span><span class="current">第4章_集合与数组.数组</span></div>
   <div class="cover ">
-    <h1 class="cover"><span><span>2-7-逻辑运算符</span></span></h1>
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
   </div>
-  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="2-7-逻辑运算符.html"><span class="token function">2-7-逻辑运算符</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><h2 class="">相等与不相等</h2><table><thead><tr><th>运算符</th><th>对应的方法</th></tr></thead><tbody><tr><td>a==b</td><td>a?.equals(b) ?: (b === null)</td></tr><tr><td>a!=b</td><td>!(a?.equals(b) ?: (b === null))</td></tr></tbody></table><p class="paragraph">可以看出<code class="lang-kotlin">==</code>与<code class="lang-kotlin">equals()</code>是等义的，只不过==比较是空安全的</p><h2 class="">比较</h2><table><thead><tr><th>运算符</th><th>对应的方法</th></tr></thead><tbody><tr><td><code class="org.jetbrains.dokka.pages.commenttable@23b8d2a1 lang-kotlin">a&gt;b</code></td><td>a.compareTo(b) 0</td></tr><tr><td><code class="org.jetbrains.dokka.pages.commenttable@23b8d2a1 lang-kotlin">a&lt;b</code></td><td>a.compareTo(b) < 0</td></tr><tr><td><code class="org.jetbrains.dokka.pages.commenttable@23b8d2a1 lang-kotlin">a &gt;= b</code></td><td>a.compareTo(b) >= 0</td></tr><tr><td><code class="org.jetbrains.dokka.pages.commenttable@23b8d2a1 lang-kotlin">a &lt;= b</code></td><td>a.compareTo(b) <= 0</td></tr></tbody></table><p class="paragraph">比较运算符其实就是由 compareTo（）方法来实现的，而该方法是 Comparable 接口中定义的方法 注意：String比较的规则是按照首字母,如果首字母相同，再比较第二个字母，以此类推</p></div></div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1263870216%2FFunctions%2F769193423" anchor-label="0-数组简介" id="-1263870216%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="0-数组简介.html"><span><span>0-数组简介</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1263870216%2FFunctions%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="0-数组简介.html"><span class="token function">0-数组简介</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-628351516%2FFunctions%2F769193423" anchor-label="1-数组" id="-628351516%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="1-数组.html"><span><span>1-数组</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-628351516%2FFunctions%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="1-数组.html"><span class="token function">1-数组</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Kotlin 创建数组大致有如下两种方式。</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
     <div class="footer">
         <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>

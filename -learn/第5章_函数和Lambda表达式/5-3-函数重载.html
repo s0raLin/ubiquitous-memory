@@ -2,7 +2,7 @@
 <html class="no-js">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-    <title>2-7-逻辑运算符</title>
+    <title>5-3-函数重载</title>
     <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
     <script>var pathToRoot = "../../";</script>
     <script>document.documentElement.classList.replace("no-js","js");</script>
@@ -104,12 +104,12 @@
                 </div>
             </div>
             <div id="main">
-<div class="main-content" data-page-type="member" id="content" pageIds="Learn::第2章_运算符和表达式//2-7-逻辑运算符/#/PointingToDeclaration//769193423">
-  <div class="breadcrumbs"><a href="../../index.html">Learn</a><span class="delimiter">/</span><a href="index.html">第2章_运算符和表达式</a><span class="delimiter">/</span><span class="current">2-7-逻辑运算符</span></div>
+<div class="main-content" data-page-type="member" id="content" pageIds="Learn::第5章_函数和Lambda表达式//5-3-函数重载/#/PointingToDeclaration//769193423">
+  <div class="breadcrumbs"><a href="../../index.html">Learn</a><span class="delimiter">/</span><a href="index.html">第5章_函数和Lambda表达式</a><span class="delimiter">/</span><span class="current">5-3-函数重载</span></div>
   <div class="cover ">
-    <h1 class="cover"><span><span>2-7-逻辑运算符</span></span></h1>
+    <h1 class="cover"><span><span>5-3-函数重载</span></span></h1>
   </div>
-  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="2-7-逻辑运算符.html"><span class="token function">2-7-逻辑运算符</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><h2 class="">相等与不相等</h2><table><thead><tr><th>运算符</th><th>对应的方法</th></tr></thead><tbody><tr><td>a==b</td><td>a?.equals(b) ?: (b === null)</td></tr><tr><td>a!=b</td><td>!(a?.equals(b) ?: (b === null))</td></tr></tbody></table><p class="paragraph">可以看出<code class="lang-kotlin">==</code>与<code class="lang-kotlin">equals()</code>是等义的，只不过==比较是空安全的</p><h2 class="">比较</h2><table><thead><tr><th>运算符</th><th>对应的方法</th></tr></thead><tbody><tr><td><code class="org.jetbrains.dokka.pages.commenttable@23b8d2a1 lang-kotlin">a&gt;b</code></td><td>a.compareTo(b) 0</td></tr><tr><td><code class="org.jetbrains.dokka.pages.commenttable@23b8d2a1 lang-kotlin">a&lt;b</code></td><td>a.compareTo(b) < 0</td></tr><tr><td><code class="org.jetbrains.dokka.pages.commenttable@23b8d2a1 lang-kotlin">a &gt;= b</code></td><td>a.compareTo(b) >= 0</td></tr><tr><td><code class="org.jetbrains.dokka.pages.commenttable@23b8d2a1 lang-kotlin">a &lt;= b</code></td><td>a.compareTo(b) <= 0</td></tr></tbody></table><p class="paragraph">比较运算符其实就是由 compareTo（）方法来实现的，而该方法是 Comparable 接口中定义的方法 注意：String比较的规则是按照首字母,如果首字母相同，再比较第二个字母，以此类推</p></div></div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="5-3-函数重载.html"><span class="token function">5-3-函数重载</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><p class="paragraph">Kotlin 允许在同一个类或同一作用域中定义多个同名函数，只要 形参列表不同（参数个数或类型不同）即可。</p><p class="paragraph">与 Java 类似，仅靠 形参名不同、返回值类型不同、修饰符不同 并不能构成重载。</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">fun sum(a: Int, b: Int): Int {<br>    return a + b<br>}<br><br>fun sum(a: Int, b: Int, c: Int): Int {<br>    return a + b + c<br>}<br><br>fun sum(a: Double, b: Double): Double {<br>    return a + b<br>}<br><br>fun main() {<br>    println(sum(1, 2))          // 调用第一个 sum，输出 3<br>    println(sum(1, 2, 3))       // 调用第二个 sum，输出 6<br>    println(sum(1.5, 2.5))      // 调用第三个 sum，输出 4.0<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">说明：</p><ol><li><p class="paragraph">第一个 sum 函数有两个 Int 参数。</p></li><li><p class="paragraph">第二个 sum 函数有三个 Int 参数 → 与第一个函数形成重载。</p></li><li><p class="paragraph">第三个 sum 函数有两个 Double 参数 → 参数类型不同，也构成重载。</p></li></ol></div></div>
 </div>
     <div class="footer">
         <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
